@@ -1,3 +1,5 @@
+.print "should clear page cache"
+
 .print "Attaching orders"
 ATTACH 'tpch1g-orders.sqlite' AS ordersdb;
 
@@ -12,6 +14,8 @@ INSERT INTO intermediate
 
 .print "detach orders"    
 DETACH ordersdb;
+
+.print "!!!TIME TO HANDOFF"
 
 .print "Attaching lineitem"
 ATTACH 'tpch1g-lineitem.sqlite' AS lineitemdb; 

@@ -1,5 +1,5 @@
 .print "Attaching lineitem"
-ATTACH 'tpch1g-lineitem.sqlite' AS lineitemdb; 
+ATTACH '/mnt/de/tpch1g-lineitem.sqlite' AS lineitemdb; 
 
 .print "perform join"
 SELECT  avg(l_extendedprice), sum(l_quantity), count(*)

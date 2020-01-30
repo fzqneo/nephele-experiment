@@ -1,7 +1,7 @@
 .print "should clear page cache"
 
 .print "Attaching orders"
-ATTACH 'tpch1g-orders.sqlite' AS ordersdb;
+ATTACH '/mnt/us-east/tpch1g-orders.sqlite' AS ordersdb;
 
 .print "create intermediate table"
 CREATE TABLE intermediate (o_orderkey INTEGER NOT NULL);
@@ -18,7 +18,7 @@ DETACH ordersdb;
 .print "!!!TIME TO HANDOFF"
 
 .print "Attaching lineitem"
-ATTACH 'tpch1g-lineitem.sqlite' AS lineitemdb; 
+ATTACH '/mnt/de/tpch1g-lineitem.sqlite' AS lineitemdb; 
 
 .print "perform join"
 SELECT  avg(l_extendedprice), sum(l_quantity), count(*)

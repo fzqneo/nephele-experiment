@@ -8,7 +8,7 @@ CREATE TABLE intermediate (o_orderkey INTEGER NOT NULL);
 INSERT INTO intermediate 
     SELECT o_orderkey 
     FROM ordersdb.orders
-    WHERE o_orderdate <= date("1994-12-01");
+    WHERE o_orderdate <= date("1992-01-25");
 
 .print "detach orders"    
 DETACH ordersdb;

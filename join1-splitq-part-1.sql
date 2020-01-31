@@ -1,5 +1,5 @@
 .print "Attaching orders"
-ATTACH '/mnt/us-east/tpch1g-orders.sqlite' AS ordersdb;
+ATTACH '/mnt/orders-mnt/tpch1g-orders.sqlite' AS ordersdb;
 
 .print "create intermediate table"
 CREATE TABLE intermediate (o_orderkey INTEGER NOT NULL);

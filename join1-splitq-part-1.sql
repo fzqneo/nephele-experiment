@@ -1,3 +1,6 @@
+.timer ON
+.headers ON
+
 .print "Attaching orders"
 ATTACH '/mnt/orders-mnt/tpch10g-orders.sqlite' AS ordersdb;
 

@@ -1,3 +1,5 @@
+.timer ON
+.headers ON
 .print "Attaching lineitem"
 ATTACH '/mnt/lineitem-mnt/tpch10g-lineitem.sqlite' AS lineitemdb; 
 

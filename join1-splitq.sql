@@ -1,3 +1,5 @@
+.timer ON
+.headers ON
 .print "should clear page cache"
 
 .print "Attaching orders"
